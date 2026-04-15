@@ -1,7 +1,7 @@
-import calendar
-
-year = int(input("Enter the year:"))
-month = int(input("Enter month:"))
-
-cal = calendar.month(year,month)
-print(cal)
+punctuations = '''!()-[]{};:'"|,<>./?@#$%^&*_'''
+my_str = input("Enter a string:")
+no_punct = ""
+for char in my_str:
+    if char not in punctuations:
+        no_punct = no_punct + char
+print(no_punct)

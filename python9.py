@@ -1,6 +1,18 @@
-import time
+num = int(input("enter a number:"))
 
-while True:
-    current_time = time.strftime("%H:%M:%S")
-    print(current_time, end="\r")
-    time.sleep(1)
+flag = False
+if num ==1:
+    print(f"{num} is not a prime number")
+elif num > 1:
+    for i in range(2,num):
+        if(num%i == 0):
+            flag = True
+            break
+
+
+
+if flag:
+    print(f"{num} is not a prime number")
+else:
+    print(f"{num} is a prime number")
+    
